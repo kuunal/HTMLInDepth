@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="refresh" content="2">
+    <!-- <meta name="refresh" content="2"> -->
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>This is demo file</header>
+    <header class="myheader">This is demo file</header>
+    <nav>
+    <ul class="myList">
+        <li>Home</li>
+        <li>About</li>
+        <li>Login</li>
+        <li>Register</li>
+    </ul>
+    </nav>
+    <main>
     <b>This text is bold</b>
     <strong>This text is important!</strong>
     <i>This text is italic</i>
@@ -18,54 +27,56 @@
     <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
     <p>This is <sub>subscripted</sub> text.</p>
     <p>This is <sup>superscripted</sup> text.</p>
-    <iframe src="/demo.html" title="demo file"></iframe>
-    <ul class="myList">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
-    <ol>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ol>
-    <table border="1px">
+    <iframe src="/demo.html" title="demo file"></iframe>    
+</main>
+<table border="1px">
+    <tr>
+        <th>
+            First
+        </th>
+        <th>
+            nick
+        </th>
+        <th>
+            last
+        </th>
+        </tr>   
         <tr>
-            <th>
-                First
-            </th>
-            <th>
-                nick
-            </th>
-            <th>
-                last
-            </th>
-            </tr>   
-            <tr>
-                <td>
-                    Patrick
-                </td>
-                <td>
-                    f0rest
-                </td>
-                <td>
-                    Lindberg
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Christopher
-                </td>
-                <td>
-                    Get_Right
-                </td>
-                <td>
-                    Alesund
-                </td>
-            </tr>       
-    </table>
+            <td>
+                Patrick
+            </td>
+            <td>
+                f0rest
+            </td>
+            <td>
+                Lindberg
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Christopher
+            </td>
+            <td>
+                Get_Right
+            </td>
+            <td>
+                Alesund
+            </td>
+        </tr>       
+</table>
+    <aside>
+    <ol>
+        <li>This is aside element</li>
+        <li>1. Some question</li>
+        <li>2. Some question</li>
+        <li><img id="cat" src="https://pbs.twimg.com/profile_images/962443049/heres_kitteh_mini_400x400.png" alt="Mald Cat"></li>
+        <li>4. Some question</li>
+    </ol>
+</aside>
+<footer class="myFooter">
+    @copyright sdasdasd
+</footer>
+    
 </body>
 </html>
 

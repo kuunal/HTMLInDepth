@@ -1,3 +1,59 @@
+body {
+  display: grid;
+  grid-template:
+    "header header"
+    "nav nav"
+    "main aside"
+    "table1 table1"
+    "footer footer";
+}
 .myList {
-  list-style: circle;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  grid-area: header;
+}
+
+body main {
+  grid-area: main;
+}
+
+body aside {
+  border: 1px solid black;
+  grid-area: aside;
+}
+
+nav {
+  grid-area: nav;
+}
+
+body table {
+  grid-area: table1;
+}
+
+.myFooter {
+  position: fixed;
+  top: 97%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  width: 100%;
+  color: white;
+  text-align: right;
+}
+
+#cat {
+  height: 200px;
+}
+
+body main b {
+  display: block;
+}
+
+body main :nth-child(2) {
+  display: inline-block;
+  width: 500px;
 }
