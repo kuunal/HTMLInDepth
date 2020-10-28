@@ -1,4 +1,5 @@
 body {
+  overflow-x: hidden;
   display: grid;
   grid-template:
     "header header"
@@ -7,10 +8,11 @@ body {
     "table1 table1"
     "footer footer";
 }
+
 .myList {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header {
@@ -22,11 +24,18 @@ body main {
 }
 
 body aside {
+  z-index: 99;
+  box-shadow: 1px 1px 8px 1px black;
   border: 1px solid black;
   grid-area: aside;
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: gray;
+  padding: 0.1em;
   grid-area: nav;
 }
 
@@ -49,11 +58,64 @@ body table {
   height: 200px;
 }
 
-body main b {
+body main > b {
   display: block;
 }
 
 body main :nth-child(2) {
+  display: inline;
+}
+
+body main :nth-child(3) {
   display: inline-block;
+  background-color: blue;
   width: 500px;
+}
+
+main + table {
+  margin: 1em;
+  border-collapse: collapse !important;
+}
+body table th {
+  padding: 0.5em;
+  background-color: blueviolet;
+}
+
+body table tr:hover {
+  background-color: gray;
+  transition: ;
+}
+
+body aside details summary ~ ol {
+  color: "red";
+}
+
+.demo ~ li {
+  color: red;
+}
+.demo + li {
+  color: blueviolet !important;
+}
+
+ol {
+  list-style-type: none;
+}
+
+li:first-of-type {
+  color: red;
+}
+
+li:nth-child(2n) {
+  color: chartreuse;
+}
+
+li:last-of-type {
+  color: brown;
+}
+
+#img1 {
+  opacity: 50%;
+  width: 100%;
+  position: absolute;
+  z-index: -99 !important;
 }
