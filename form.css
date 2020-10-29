@@ -54,17 +54,22 @@ body form button:hover + p {
 .from_inputtext label::after {
   content: "*";
 }
-#box {
+.box {
   width: 100px;
   height: 100px;
   background: red;
   transition: width 2s, height 2s, transform 2s;
 }
 
-#box:hover {
+.box:hover {
   width: 300px;
   height: 300px;
   transform: translateX(50%);
   transition-timing-function: ease;
   transition-delay: 2s;
+}
+
+div + div {
+  float: right;
+  margin-right: "50%";
 }
